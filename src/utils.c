@@ -6,7 +6,7 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:25:14 by bat               #+#    #+#             */
-/*   Updated: 2023/07/12 11:19:42 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/13 18:08:22 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,13 @@ long long	get_time_ms(void)
 
 	gettimeofday(&tv, NULL);
 	return ((long long)(tv.tv_sec * 1000) + (tv.tv_usec / 1000));
+}
+
+void	ft_putendl_fd(char *s, int fd)
+{
+	if (s == NULL)
+		return ((void)NULL);
+	while (*s)
+		write(fd, s++, 1);
+	write(fd, "\n", 1);
 }
