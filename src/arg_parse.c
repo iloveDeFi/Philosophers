@@ -6,7 +6,7 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:21:43 by bat               #+#    #+#             */
-/*   Updated: 2023/07/13 17:52:13 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/14 16:59:07 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ t_arg	parse_args(int ac, char **av)
 	return (arg);
 }
 
-// TO DO : CHECK FT_PUTENDL_FD ORIGIN
 t_arg	parse_error(t_arg *arg)
 {
 	ft_putendl_fd("Error: argument", 1);
