@@ -6,7 +6,7 @@
 #    By: bat <bat@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/11 10:28:15 by bat               #+#    #+#              #
-#    Updated: 2023/07/18 11:34:58 by bat              ###   ########.fr        #
+#    Updated: 2023/07/18 13:49:28 by bat              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ NAME = philo
 CC = gcc
 RM = rm -f
 
-CFLAGS = -Wall -Wextra -O0
+CFLAGS = -Wall -Wextra -O0 -Wno-unused-function
 
 all: ${NAME}
 
