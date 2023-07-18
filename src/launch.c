@@ -6,12 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:24:15 by bat               #+#    #+#             */
-/*   Updated: 2023/07/11 17:24:28 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:38 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
-#include "utils.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 int	launch_philos(t_philo *philos, t_arg arg)
 {

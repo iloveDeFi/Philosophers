@@ -6,59 +6,47 @@
 #    By: bat <bat@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/11 10:28:15 by bat               #+#    #+#              #
-#    Updated: 2023/07/16 12:06:16 by bat              ###   ########.fr        #
+#    Updated: 2023/07/18 11:34:58 by bat              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FILES		= 	main \
-				arg_parse \
-				list \
-				launch \
-				threads \
-				kill \
-			  	utils
+FILES = main.c \
+        arg_parse.c \
+        list.c \
+        launch.c \
+        threads.c \
+        kill.c \
+        utils.c
 
-INCLUDES	= philosophers.h \
-				utils.h
+INCLUDES = philosophers.h \
+           utils.h
 
-PATH	= ./includes/
+INCLUDES_PATH = /philosophers/includes/
 
-LIB_PATH	= ./libft/
+SRCS = $(wildcard src/*.c)
+OBJS = $(SRCS:.c=.o)
 
-LIBFT 	= ${LIB_PATH}libft.a
+NAME = philo
 
-HEADERS = $(addprefix $(PATH), $(INCLUDES))
+CC = gcc
+RM = rm -f
 
-SRCS	= $(wildcard src/*.c)
+CFLAGS = -Wall -Wextra -O0
 
-OBJS	= $(SRCS:%.c=%.o)
+all: ${NAME}
 
-NAME	= philo
+%.o: %.c
+	${CC} ${CFLAGS} -I${INCLUDES_PATH} -c $< -o $@
 
-CC		= gcc
-RM		= rm -f
-
-CFLAGS	= -Wall -Wextra -Werror #-fsanitize=address
-# TFLAGS	= -lpthread -fsanitize=thread
-
-all:		${LIBFT} ${NAME}
-
-${LIBFT}: ${LIB_PATH} 
-	make -C ${LIB_PATH}
-
-
-%.o:	%.c
-		${CC} ${CFLAGS} -I${PATH} -c $< -o $@ 
-
-${NAME}:	${OBJS}
-		${CC} ${CFLAGS} $^ -o $@
+${NAME}: ${OBJS}
+	${CC} ${CFLAGS} $^ -o $@
 
 clean:
-		${RM} ${OBJS}
+	${RM} ${OBJS}
 
-fclean:	clean
-		${RM} ${NAME}
+fclean: clean
+	${RM} ${NAME}
 
-re:		fclean all
+re: fclean all
 
-.PHONY:		all bonus clean fclean re
+.PHONY: all clean fclean re

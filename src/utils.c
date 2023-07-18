@@ -6,11 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:25:14 by bat               #+#    #+#             */
-/*   Updated: 2023/07/13 18:08:22 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:57 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 void	set_state(t_philo *philos, int n, t_state state)
 {

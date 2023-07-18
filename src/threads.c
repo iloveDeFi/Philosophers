@@ -6,12 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:22:27 by bat               #+#    #+#             */
-/*   Updated: 2023/07/12 11:19:40 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:52 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
-#include "utils.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 void	*philo_start(void *launch)
 {

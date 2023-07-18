@@ -6,7 +6,7 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:16:00 by bat               #+#    #+#             */
-/*   Updated: 2023/07/13 18:14:06 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:43:59 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,8 @@ t_state	get_state(t_philo *philos, int n);
 void	ft_wait_ms(int n);
 long long	get_time_ms(void);
 void	ft_putendl_fd(char *s, int fd);
+int ft_atoi(const char *str);
+void	*ft_calloc(size_t count, size_t size);
+void	ft_bzero(void *s, size_t n);
 
 #endif

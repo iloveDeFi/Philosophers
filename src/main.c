@@ -6,12 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 10:28:20 by bat               #+#    #+#             */
-/*   Updated: 2023/07/12 11:19:38 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:48 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
-#include "utils.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 int	main(int ac, char **av)
 {

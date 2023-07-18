@@ -6,11 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:21:43 by bat               #+#    #+#             */
-/*   Updated: 2023/07/16 12:06:51 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:22 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 t_arg	parse_args(int ac, char **av)
 {

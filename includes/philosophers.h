@@ -6,7 +6,7 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 10:28:18 by bat               #+#    #+#             */
-/*   Updated: 2023/07/13 14:02:41 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 10:26:30 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,14 +54,14 @@ typedef struct s_launch
 }   t_launch;
 
 // arg_parse.c
-t_arg	parse_args(int ac, char **av);
+t_arg   parse_args(int ac, char **av);
 t_arg	parse_error(t_arg *arg);
 void	print_args(t_arg arg);
 
 // kill.c
 void	verify_meals(t_philo *philos, t_arg arg);
-static int	philos_kill(t_philo *philos, int time_to_die, int i, int *n_freed);
-static void	philos_kill_all(t_philo *philos, int number_of_philosophers);
+static int  philos_kill(t_philo *philos, int time_to_die, int i, int *n_freed);
+static void philos_kill_all(t_philo *philos, int number_of_philosophers);
 
 // launch.c
 int		launch_philos(t_philo *philos, t_arg arg);

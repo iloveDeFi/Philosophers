@@ -6,12 +6,12 @@
 /*   By: bat <bat@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:23:23 by bat               #+#    #+#             */
-/*   Updated: 2023/07/12 11:19:31 by bat              ###   ########.fr       */
+/*   Updated: 2023/07/18 11:35:27 by bat              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
-#include "utils.h"
+#include "../includes/philosophers.h"
+#include "../includes/utils.h"
 
 void	verify_meals(t_philo *philos, t_arg arg)
 {
